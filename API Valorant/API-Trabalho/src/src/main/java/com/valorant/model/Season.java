@@ -13,6 +13,6 @@ public class Season {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class SeasonResponse {
-        public List<Season> lista;
+        public List<Season> listaSeason;
     }
 }

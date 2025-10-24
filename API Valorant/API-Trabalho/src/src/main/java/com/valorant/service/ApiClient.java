@@ -13,7 +13,7 @@ import reactor.netty.http.client.HttpClient;
 public class ApiClient {
 
     private final WebClient webClient;
-
+    private final String ENDERECO = "https://valorant-api.com/v1";
     public ApiClient() {
         ExchangeStrategies strategies = ExchangeStrategies.builder()
                 .codecs(configurer -> configurer
@@ -22,7 +22,7 @@ public class ApiClient {
                 .build();
 
         this.webClient = WebClient.builder()
-                .baseUrl("https://valorant-api.com/v1")
+                .baseUrl(ENDERECO)
                 .clientConnector(new ReactorClientHttpConnector(HttpClient.create()))
                 .exchangeStrategies(strategies)
                 .build();

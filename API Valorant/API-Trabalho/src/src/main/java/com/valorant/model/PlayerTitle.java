@@ -9,6 +9,6 @@ public class PlayerTitle {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class TitleResponse {
-        public List<PlayerTitle> data;
+        public List<PlayerTitle> lista;
     }
 }

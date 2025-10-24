@@ -11,7 +11,7 @@ public class WeaponService {
 
     public List<Weapon> getWeapons() throws Exception {
         Weapon.WeaponResponse resp = apiClient.get("/weapons", Weapon.WeaponResponse.class);
-        if (resp == null || resp.data == null) return Collections.emptyList();
-        return resp.data;
+        if (resp == null || resp.lista == null) return Collections.emptyList();
+        return resp.lista;
     }
 }

@@ -10,6 +10,6 @@ public class GameMode {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class GameModeResponse {
-        public List<GameMode> data;
+        public List<GameMode> lista;
     }
 }

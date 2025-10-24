@@ -11,7 +11,7 @@ public class SeasonService {
 
     public List<Season> getSeasons() throws Exception {
         Season.SeasonResponse resp = apiClient.get("/seasons", Season.SeasonResponse.class);
-        if (resp == null || resp.data == null) return Collections.emptyList();
-        return resp.data;
+        if (resp == null || resp.lista == null) return Collections.emptyList();
+        return resp.lista;
     }
 }

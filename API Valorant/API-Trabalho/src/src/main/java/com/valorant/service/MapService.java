@@ -11,7 +11,7 @@ public class MapService {
 
     public List<MapModel> getMaps() throws Exception {
         MapModel.MapResponse resp = apiClient.get("/maps", MapModel.MapResponse.class);
-        if (resp == null || resp.data == null) return Collections.emptyList();
-        return resp.data;
+        if (resp == null || resp.lista == null) return Collections.emptyList();
+        return resp.lista;
     }
 }

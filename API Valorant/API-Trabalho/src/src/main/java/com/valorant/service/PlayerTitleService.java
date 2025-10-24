@@ -11,7 +11,7 @@ public class PlayerTitleService {
 
     public List<PlayerTitle> getTitles() throws Exception {
         PlayerTitle.TitleResponse resp = apiClient.get("/playertitles", PlayerTitle.TitleResponse.class);
-        if (resp == null || resp.data == null) return Collections.emptyList();
-        return resp.data;
+        if (resp == null || resp.lista == null) return Collections.emptyList();
+        return resp.lista;
     }
 }

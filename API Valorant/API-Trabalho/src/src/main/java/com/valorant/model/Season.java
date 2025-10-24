@@ -1,6 +1,5 @@
 package com.valorant.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -14,6 +13,6 @@ public class Season {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class SeasonResponse {
-        public List<Season> data;
+        public List<Season> lista;
     }
 }

@@ -11,7 +11,7 @@ public class GameModeService {
 
     public List<GameMode> getGameModes() throws Exception {
         GameMode.GameModeResponse resp = apiClient.get("/gamemodes", GameMode.GameModeResponse.class);
-        if (resp == null || resp.data == null) return Collections.emptyList();
-        return resp.data;
+        if (resp == null || resp.lista == null) return Collections.emptyList();
+        return resp.lista;
     }
 }

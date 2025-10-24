@@ -14,7 +14,7 @@ public class Skin {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class SkinResponse {
-        public List<Skin> data;
+        public List<Skin> lista;
     }
 }
 

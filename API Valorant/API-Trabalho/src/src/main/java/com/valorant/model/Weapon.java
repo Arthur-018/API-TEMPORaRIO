@@ -13,6 +13,6 @@ public class Weapon {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class WeaponResponse {
-        public List<Weapon> data;
+        public List<Weapon> lista;
     }
 }

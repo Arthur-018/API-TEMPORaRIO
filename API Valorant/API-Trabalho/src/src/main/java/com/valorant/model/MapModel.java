@@ -9,6 +9,6 @@ public class MapModel {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class MapResponse {
-        public List<MapModel> data;
+        public List<MapModel> lista;
     }
 }

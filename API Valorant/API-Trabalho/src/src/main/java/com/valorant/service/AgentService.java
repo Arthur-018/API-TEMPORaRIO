@@ -11,8 +11,8 @@ public class AgentService {
 
     public List<Agent> getByRoleName(String role) throws Exception {
         Agent.AgentResponse resp = apiClient.get("/agents", Agent.AgentResponse.class);
-        if (resp == null || resp.data == null) return Collections.emptyList();
-        return resp.data.stream()
+        if (resp == null || resp.lista == null) return Collections.emptyList();
+        return resp.lista.stream()
                 .filter(a -> a.role != null && a.role.displayName != null && a.role.displayName.equalsIgnoreCase(role))
                 .toList();
     }

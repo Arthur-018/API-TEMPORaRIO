@@ -11,7 +11,7 @@ public class SkinService {
 
     public List<Skin> getSkins() throws Exception {
         Skin.SkinResponse resp = apiClient.get("/weapons/skins", Skin.SkinResponse.class);
-        if (resp == null || resp.data == null) return Collections.emptyList();
-        return resp.data;
+        if (resp == null || resp.lista == null) return Collections.emptyList();
+        return resp.lista;
     }
 }

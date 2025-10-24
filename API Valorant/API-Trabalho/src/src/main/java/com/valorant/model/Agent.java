@@ -1,5 +1,4 @@
 package com.valorant.model;
-import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.List;
 
@@ -18,6 +17,6 @@ public class Agent {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class AgentResponse {
-        public List<Agent> data;
+        public List<Agent> lista;
     }
 }

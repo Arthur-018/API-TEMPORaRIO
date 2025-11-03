@@ -15,44 +15,49 @@ Aplicação Java que consome a [Valorant API](https://valorant-api.com) para exi
 ---
 
 ## 🧱 Estrutura do Projeto
+
+
+```bash
 API Valorant/
 │
-├── 📄 pom.xml # Configuração e dependências do Maven
+├── 📄 pom.xml                        # Configuração e dependências do Maven
 │
 ├── 📂 src/
-│ ├── main/
-│ │ ├── java/com/valorant/
-│ │ │ ├── Main.java # Ponto de entrada principal
-│ │ │ ├── ValorantConsoleApp.java # Interface via console
-│ │ │ │
-│ │ │ ├── 📁 model/ # Modelos de dados (entidades)
-│ │ │ │ ├── Agent.java
-│ │ │ │ ├── MapModel.java
-│ │ │ │ ├── Weapon.java
-│ │ │ │ ├── Skin.java
-│ │ │ │ ├── GameMode.java
-│ │ │ │ ├── PlayerTitle.java
-│ │ │ │ └── Season.java
-│ │ │ │
-│ │ │ ├── 📁 service/ # Camada de serviços e lógica de negócio
-│ │ │ │ ├── ApiClient.java
-│ │ │ │ ├── AgentService.java
-│ │ │ │ ├── MapService.java
-│ │ │ │ ├── WeaponService.java
-│ │ │ │ ├── SkinService.java
-│ │ │ │ ├── GameModeService.java
-│ │ │ │ ├── PlayerTitleService.java
-│ │ │ │ └── SeasonService.java
-│ │ │ │
-│ │ │ └── 📁 controller/ # (planejada) Camada de controle para futuras rotas web
-│ │ │
-│ │ └── resources/
-│ │ ├── application.properties # Configurações da aplicação
-│ │ └── templates/ # (planejada) Páginas HTML com Thymeleaf
-│ │
-│ └── test/ # (planejada) Testes unitários e de integração
+│   ├── main/
+│   │   ├── java/com/valorant/
+│   │   │   ├── Main.java                 # Ponto de entrada principal
+│   │   │   ├── ValorantConsoleApp.java   # Interface via console
+│   │   │   │
+│   │   │   ├── 📁 model/                 # Modelos de dados (entidades)
+│   │   │   │   ├── Agent.java
+│   │   │   │   ├── MapModel.java
+│   │   │   │   ├── Weapon.java
+│   │   │   │   ├── Skin.java
+│   │   │   │   ├── GameMode.java
+│   │   │   │   ├── PlayerTitle.java
+│   │   │   │   └── Season.java
+│   │   │   │
+│   │   │   ├── 📁 service/               # Camada de serviços e lógica de negócio
+│   │   │   │   ├── ApiClient.java
+│   │   │   │   ├── AgentService.java
+│   │   │   │   ├── MapService.java
+│   │   │   │   ├── WeaponService.java
+│   │   │   │   ├── SkinService.java
+│   │   │   │   ├── GameModeService.java
+│   │   │   │   ├── PlayerTitleService.java
+│   │   │   │   └── SeasonService.java
+│   │   │   │
+│   │   │   └── 📁 controller/            # (planejada) Camada de controle para futuras rotas web
+│   │   │
+│   │   └── resources/
+│   │       ├── application.properties    # Configurações da aplicação
+│   │       └── templates/                # (planejada) Páginas HTML com Thymeleaf
+│   │
+│   └── test/                            # (planejada) Testes unitários e de integração
 │
-└── 📂 target/ # Arquivos compilados gerados pelo Maven
+└── 📂 target/                           # Arquivos compilados gerados pelo Maven
+```
+
 
 
 
